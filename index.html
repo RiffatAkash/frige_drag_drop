@@ -76,10 +76,10 @@
 		    top: 0px;right: 20px;
 		}
 		.pp_wrapper .element_7 {
-			width: 59px;
-		    height: 220px;
-		    right: 1px;
-		    top: 0px;
+			width: 76px;
+		    height: 203px;
+		    right: -15px;
+		    top: -5px;
 		    transform-origin: 0% 0%;
 		    transform: rotateY(0deg);
 		}
@@ -200,14 +200,14 @@
 		transform: rotateY(0deg);
 	}
 	100% {
-		transform: rotateY(90deg);
+		transform: rotateY(95deg);
 	}
 }
 
 .door_rotate { animation: door_rotate 1.5s;}
 
 .element_fridge {
-	left: 26px;
+	left: 20px;
 	transform-origin: 100% 0%;
     z-index: 9999;
 }
@@ -252,22 +252,22 @@
 
 	<div class="pp_wrapper">
 		<div class="slide slide_1 absolute">
-			<div class="element_1 absolute shake"><img src="assets/slide1/meat.png" alt=""></div>
-			<div class="element_2 absolute shake"><img src="assets/slide1/veg.png" alt=""></div>
-			<div class="element_3 absolute shake"><img src="assets/slide1/fruits.png" alt=""></div>
-			<div class="element_4 absolute shake"><img src="assets/slide1/readyfood.png" alt=""></div>
-			<div class="element_5 absolute "><img src="assets/slide1/dragtext.png" alt=""></div>
+			<div class="element_1 absolute shake"><img src="assets/slide1/meat.png?v=1.1" alt=""></div>
+			<div class="element_2 absolute shake"><img src="assets/slide1/veg.png?v=1.1" alt=""></div>
+			<div class="element_3 absolute shake"><img src="assets/slide1/fruits.png?v=1.1" alt=""></div>
+			<div class="element_4 absolute shake"><img src="assets/slide1/readyfood.png?v=1.1" alt=""></div>
+			<div class="element_5 absolute "><img src="assets/slide1/dragtext.png?v=1.1" alt=""></div>
 		</div>
 		<div class="slide_2 absolute">
-			<div class="element_6 absolute"><img src="assets/slide1/body.png" alt=""></div>
-			<div class="element_7 absolute"><img src="assets/slide1/door.png" alt=""></div>
-			<div class="element_fridge absolute hidden"><img src="assets/slide1/closed.png" alt=""></div>
+			<div class="element_6 absolute"><img src="assets/slide1/body.png?v=1.1" alt=""></div>
+			<div class="element_7 absolute"><img src="assets/slide1/door.png?v=1.1" alt=""></div>
+			<div class="element_fridge absolute hidden"><img src="assets/slide1/closed.png?v=1.1" alt=""></div>
 		</div>
 		<div class="slide slide_3 absolute hidden">
-			<div class="element_8 absolute"><img src="assets/slide2/mnemonic.png" alt=""></div>
-			<div class="element_9 absolute"><img src="assets/slide2/bottom.png" alt=""></div>
-			<div class="element_10 absolute pulse"><img src="assets/slide2/button.png" alt=""></div>
-			<div class="element_11 absolute "><img src="assets/slide2/fridge-close.png" alt=""></div>
+			<div class="element_8 absolute"><img src="assets/slide2/mnemonic.png?v=1.1" alt=""></div>
+			<div class="element_9 absolute"><img src="assets/slide2/bottom.png?v=1.1" alt=""></div>
+			<div class="element_10 absolute pulse"><img src="assets/slide2/button.png?v=1.1" alt=""></div>
+			<div class="element_11 absolute "><img src="assets/slide2/fridge-close.png?v=1.1" alt=""></div>
 		</div>
 	</div>
 
@@ -410,7 +410,7 @@ function close_fridge ( ) {
 		$(".slide_2 .element_fridge").addClass('fridge_rotate');
 		setTimeout(function(){
 			$(".slide_1").addClass('hidden');
-			$(".slide_2").css({'right':'120px','transition': 'right .8s'});
+			$(".slide_2").css({'right':'120px','transition': 'right 1s'});
 			setTimeout(function(){
 				$(".slide_2 .element_6").addClass('hidden');
 				$(".slide_2 .element_fridge").addClass('hidden');
