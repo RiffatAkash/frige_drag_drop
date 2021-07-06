@@ -410,12 +410,12 @@ function close_fridge ( ) {
 		$(".slide_2 .element_fridge").addClass('fridge_rotate');
 		setTimeout(function(){
 			$(".slide_1").addClass('hidden');
-			$(".slide_2").css({'right':'120px','transition': 'right 1s'});
+			$(".slide_2").css({'right':'90px','transition': 'right .5s'});
 			setTimeout(function(){
 				$(".slide_2 .element_6").addClass('hidden');
 				$(".slide_2 .element_fridge").addClass('hidden');
 				$(".slide_3").removeClass('hidden').addClass('showZoomIn');
-			}, 300);
+			}, 800);
 		}, 500);
 	}, 1200);
 
